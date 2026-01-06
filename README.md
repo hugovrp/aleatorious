@@ -190,15 +190,6 @@ public boolean preHandle(HttpServletRequest request, HttpServletResponse respons
 
 ### 2. Gestão de Disciplinas e Matérias
 
-**Hierarquia de Conteúdo**:
-```
-Disciplina (Subject)
-    └── Matéria/Tópico (Topic)
-            ├── Série (1º ao 9º ano)
-            ├── Bimestre (1º ao 4º)
-            └── Questões (Question)
-```
-
 **Exemplo de Cadastro**:
 ```java
 @ResponseBody
@@ -496,7 +487,6 @@ public String adminReports(@RequestParam(value="userId", required=false) Integer
 O sistema possui uma interface moderna e responsiva com:
 
 - 🎨 **Single Page Application (SPA)** com AJAX
-- 📱 **Layout Responsivo** que se adapta a diferentes dispositivos
 - ✨ **Navegação dinâmica** sem recarregamento de página
 - 🔍 **Formulários modais** para cadastros
 - ✅ **Validação em tempo real** dos formulários
